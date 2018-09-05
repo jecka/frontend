@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="autor" content="Jecka">
+	<meta name="description" content="se pone descripcion del sitio">
+	<meta name="keywords" content="tutoriales, html, desarrolloWeb">
+	<title>Estructura del cuerpo</title>
+	<link rel="icon" href="img/icono.png"> <!-- haces referencia-->
+</head>
+<body>
+	<center>
+	<h3>Formulario</h3>
+	<form>
+		<label for="texto" >Entrada de texto</label>
+		<input id="texto" type="text" placeholder="Entrada de texto" value="" required>
+
+		<br>
+		<br>
+
+		<label for="correo" >Entrada de correo</label>
+		<input id="correo" type="email" placeholder="Entrada de correo" value="" required>
+
+		<br>
+		<br>
+
+	   <label for="pass" >Entrada de contraseña</label>
+		<input id="pass" type="password" placeholder="Entrada de contraseña" value="" required>
+
+		<br>
+		<br>
+
+		<input type="number" value="10" min="0" max = "15" required>
+
+		<br>
+		<br>
+
+		<select>
+		<option>Opcion1</option>
+		<option>Opcion2</option>
+		<option>Opcion3</option>	
+		</select>
+
+		<br>
+		<br>
+
+		<input type="checkbox" id="rojo"> <label for="rojo">Rojo</label>
+		<input type="checkbox" id="amarillo"> <label for="amarillo">Amarillo</label>
+		<input type="checkbox" id="verde"> <label for="verde">Verde</label>
+
+		<br>
+		<br>
+
+		<input type="radio" id="blanco" name="radio" checked> <label for="blanco">Blanco</label>
+		<input type="radio" id="negro" name="radio"> <label for="Negro">Negro</label>
+
+		<br>
+		<br>
+
+		<input type="submit" value="Enviar formulario">
+
+	</form>
+	</center>
+	
+	<header>
+		<div id="logotipo">Logotipo</div>
+	</header>
+
+	<nav>barra de navegacion</nav>
+	<section>sección principial</section>
+	
+	<aside>
+		<div class="noticias">Noticia 1</div>
+		<div class="noticias">Noticia 2</div>
+		<div class="noticias">Noticia 3</div>
+	</aside>
+	
+	<article>articulo</article>
+	<h1>Titulo</h1>
+	<h2>Titulo</h2>
+	<h3>Titulo</h3>
+	<h4>Titulo</h4>
+	<h5>Titulo</h6>
+	<h6>Titulo</h6>
+	<p>esta es una etiqueta para un <b>parrafo</b>, <br> es otro parrafo </p>
+	<hr>
+	<a href="#">vinculo</a>
+	<br>
+	<figure>
+	<img src="img/imagen.jpg">
+	</figure>
+	<figcaption>Pie de pagina</figcaption> <!--Pie pagina a a la imagen -->
+	
+	<ol>
+	<li>carro</li>	
+	<li>barco</li>
+	<li>avion</li>
+	</ol>
+	<il>
+	<li>carro</li>	
+	<li>barco</li>
+	<li>avion</li>
+	</il>
+
+	<table border="1">
+	<thead>
+	<tr>
+		<th>MES</th>
+		<th>AHORRO</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th>ENERO</th>
+		<th>100</th>
+	</tr>
+	<tr>
+		<th>FEBRERO</th>
+		<th>200</th>
+	</tr>
+	</tbody>	
+	</table>
+
+	<h1>Resultaos del Examen</h1>
+	<p>Carlos:<meter value="94" min="0" max="100"  high="90"></meter> </p>
+	<p>Andres:<meter value="60" min="0" max="100"  high="90"> </p>
+	<p>Ana: <meter value="85" min="0" max="100"  high="90"></p>
+	<p>Pedro: <meter value="45" min="0" max="100"  high="90"></p>
+
+	<h2>Resultaos de ventas</h2>
+	<p>Enero <progress value="94" min="0" max="100"></p> 
+	<p>Febero <progress value="60" min="0" max="100"></p>
+	<p>Marzo <progress value="85" min="0" max="100"></p>
+	<p>Abril <progress value="45" min="0" max="100"></p>
+
+	<audio  controls loop preload="auto" >
+		<source src="audio/audio.m4a" type="audio/mp4">
+		<source src="audio/audio.mp3" type="audio/mp4">
+		<source src="audio/audio.ogg" type="audio/mp4">
+	</audio>
+
+
+	<!-- Ejemplos de Iframe y video
+	<video  controls loop width="500" height="200">	
+		<source src="videos/video.mp4" type="video/mp4">
+		<source src="videos/video.ogv" type="video/ogg">
+		<source src="videos/video.webm" type="video/webm">
+	</video>
+	 <iframe width="500" height="280" src="https://www.youtube.com/embed/TyHvyGVs42U" frameborder="0" allowfullscreen></iframe>
+
+	<iframe width="640" height="346" src="https://player.vimeo.com/video/251397575" frameborder="0" allowfullscreen></iframe>
+
+	<iframe width="100%" height="300"  frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/339318387&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+
+	<iframe src="http://en.calameo.com/read/00456815275f9f74f0032" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.169825426589!2d-99.1847825!3d19.405067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff60d191f76b%3A0xd760e00aaf2cad29!2sIncantatum!5e0!3m2!1ses!2smx!4v1518572247989" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	<iframe src="http://www.elcolombiano.com/"  width="100%" height="600” scrolling="auto" frameborder="0" AllowTransparency="true"></iframe> 
+
+-->
+	<footer>Este es el pie de pagina </footer>
+</body>
+</html>
